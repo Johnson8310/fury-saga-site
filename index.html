@@ -1,1 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Fury Saga Universe</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Georgia, serif;
+      background: #000;
+      color: #e0e0e0;
+    }
+    a { color: #e0e0e0; text-decoration: none; }
+    h1, h2, h3 { font-weight: normal; }
+    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+    button {
+      background: #7a0000;
+      color: #fff;
+      border: none;
+      padding: 14px 24px;
+      margin: 8px;
+      cursor: pointer;
+    }
+    button:hover { background: #b30000; }
+    .hero {
+      height: 100vh;
+      background: url('https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1080&w=1920') center/cover no-repeat;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.65);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #111;
+      border: 1px solid #333;
+      padding: 20px;
+      border-radius: 6px;
+    }
+    .lore-line {
+      font-style: italic;
+      font-size: 20px;
+      color: #ccc;
+      margin: 10px 0;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
 
+  <section class="hero">
+    <div class="hero-content">
+      <h1>THE FURY SAGA</h1>
+      <p><em>Steel Remembers.</em></p>
+      <div>
+        <button onclick="location.href='#overview'">Enter the Saga</button>
+        <button onclick="location.href='#books'">Start with Book One</button>
+        <button onclick="location.href='#join'">Join the Watchlist</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="overview">
+    <h2>The Universe</h2>
+    <p>
+      A supernatural thriller universe rooted in bloodlines, prophecy, and steel.<br>
+      Born in fire. Passed through generations.<br>
+      A curse bound not to people—but to machines, roads, and choices.
+    </p>
+  </section>
+
+  <section id="books">
+    <h2>The Books</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>FURY: BOOK ONE</h3>
+        <p>Prophecy Can’t Change. Evil Never Dies.</p>
+        <button>Read More</button>
+      </div>
+      <div class="card">
+        <h3>FURY: BOOK TWO</h3>
+        <p>The curse expands. New territory. Deeper truths.</p>
+        <button disabled>Coming Soon</button>
+      </div>
+      <div class="card">
+        <h3>Future Installments</h3>
+        <p>More stories are awakening.</p>
+        <button disabled>Locked</button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Characters & Legacy</h2>
+    <p>Inheritors, not heroes. Generations echo forward.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Arlene Cunningway</h3>
+        <p>Reluctant heir bound to steel and truth.</p>
+      </div>
+      <div class="card">
+        <h3>The Generations</h3>
+        <p>Figures whose choices shaped the curse.</p>
+      </div>
+      <div class="card">
+        <h3>The Unseen</h3>
+        <p>Witnesses. Victims. Failed heroes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>The Curse & The Prophecy</h2>
+    <p class="lore-line">Fire cleans nothing.</p>
+    <p class="lore-line">Steel keeps score.</p>
+    <p class="lore-line">The road remembers every mile.</p>
+    <p>This is mythology written in rust. A curse that moves with metal. A prophecy etched in each wreck.</p>
+  </section>
+
+  <section>
+    <h2>The Author</h2>
+    <p>J.C. Johnson crafts lived-in, dangerous worlds. Supernatural horror meets American industrial realism — and nothing is safe.</p>
+  </section>
+
+  <section id="join">
+    <h2>Stay Ahead of the Curse</h2>
+    <p>Get updates, reveals, and insider glimpses.</p>
+    <button onclick="location.href='mailto:subscribe@furysaga.com?subject=Join%20the%20Watchlist'">Join the Watchlist</button>
+  </section>
+
+  <footer>
+    <p>The Fury Saga © J.C. Johnson</p>
+    <p><a href="#books">Books</a> | <a href="#overview">Lore</a> | <a href="#join">Watchlist</a></p>
+    <p>More stories are coming.</p>
+  </footer>
+
+</body>
+</html>
